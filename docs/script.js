@@ -30,29 +30,32 @@ function initializeGraph() {
         return element;
     }
 
-    // Add content to initial panel if it was just created
-    if (!document.getElementById('initial-panel').innerHTML) {
-        elements.initialPanel.innerHTML = `
-            <h2>Welcome to the Cybernetic Countercultures Intensive</h2>
-            <p>This site hosts our course materials, session recordings, and other resources.</p>
-            
-            <h3>How to Navigate:</h3>
-            <ul>
-                <li>Click on any week bubble to view details about that week's content.</li>
-                <li>The lines between bubbles connect weeks that are part of the same unit.</li>
-                <li>Use this panel to get an overview of the course structure (to bring it back up, click the "Help" button).</li>
-            </ul>
-            <h3>Course Overview:</h3>
-            <p>What if there were a road less taken in the history of cybernetics — one with profound implications for how we understand technology today?</p>
-            <p>Alongside the well-known cybernetics of command and control, of informatics and machine intelligence, in the 1960s and 1970s a more organic cybernetic mode also arose, an ecological line of inquiry that foregrounded the complex internal and interactive behaviors of living systems.</p> 
-            <p>A 12-week online course led by Dr. Bruno Clarke and Dr. David McConville of Gaian Systems, and co-produced by Gray Area, the Cybernetic Countercultures Intensive will take this alternative ecological route through the larger history of cybernetics. Our aim is to recover and revive the organic and ecological lines of systems thinking and then to venture toward new ways of conceiving and building advanced technological systems — from machines that work in symbiosis with living processes to adaptive architectures and regenerative infrastructures. Join us on a voyage of rediscovery seeking not to imitate life but to integrate the technosphere with the biosphere, to design a technological paradigm grounded in the sensitivity and sentience of the living world.</p>
-            <h3>Info Session:</h3>
-            <!-- YouTube Video Embed -->
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bqDfL8BVR_k?si=D9dV5S6bVkvHoQjf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        `;
-    }
+    console.log("Initial panel element:", elements.initialPanel);
+    console.log("Initial panel innerHTML before:", elements.initialPanel.innerHTML);
+
+    // Always set the content of the initial panel
+    elements.initialPanel.innerHTML = `
+        <h2>Welcome to the Cybernetic Countercultures Intensive</h2>
+        <p>This site hosts our course materials, session recordings, and other resources.</p>
+        
+        <h3>How to Navigate:</h3>
+        <ul>
+            <li>Click on any week bubble to view details about that week's content.</li>
+            <li>The lines between bubbles connect weeks that are part of the same unit.</li>
+            <li>Use this panel to get an overview of the course structure (to bring it back up, click the "Help" button).</li>
+        </ul>
+        <h3>Course Overview:</h3>
+        <p>What if there were a road less taken in the history of cybernetics — one with profound implications for how we understand technology today?</p>
+        <p>Alongside the well-known cybernetics of command and control, of informatics and machine intelligence, in the 1960s and 1970s a more organic cybernetic mode also arose, an ecological line of inquiry that foregrounded the complex internal and interactive behaviors of living systems.</p> 
+        <p>A 12-week online course led by Dr. Bruno Clarke and Dr. David McConville of Gaian Systems, and co-produced by Gray Area, the Cybernetic Countercultures Intensive will take this alternative ecological route through the larger history of cybernetics. Our aim is to recover and revive the organic and ecological lines of systems thinking and then to venture toward new ways of conceiving and building advanced technological systems — from machines that work in symbiosis with living processes to adaptive architectures and regenerative infrastructures. Join us on a voyage of rediscovery seeking not to imitate life but to integrate the technosphere with the biosphere, to design a technological paradigm grounded in the sensitivity and sentience of the living world.</p>
+        <h3>Info Session:</h3>
+        <!-- YouTube Video Embed -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bqDfL8BVR_k?si=D9dV5S6bVkvHoQjf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    `;
+
+    console.log("Initial panel innerHTML after:", elements.initialPanel.innerHTML);
 
     // Function to show initial panel
     function showInitialPanel() {
