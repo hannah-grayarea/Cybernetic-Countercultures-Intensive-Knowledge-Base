@@ -302,7 +302,7 @@ fetch('weekDetails.json')
     .catch(error => console.error('Error loading week details:', error));
 
 function downloadFile(filename) {
-    window.location.href = `./course-files/${filename}`;
+    window.location.href = `./docs/course-files/${filename}`;
 }
 
 // Make sure these functions are defined in the global scope
