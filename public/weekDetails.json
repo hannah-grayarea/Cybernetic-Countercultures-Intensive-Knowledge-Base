@@ -1,0 +1,212 @@
+[
+    {
+      "week": 1,
+      "title": "Introduction: The Whole Earth Network, Organic Cybernetics, and the Problem with Intelligence",
+      "description": "This week introduces the core concepts and challenges in understanding intelligence.",
+      "readings": [
+       {
+        "name": "Clarke, “The Whole Earth Network,” chapter 4 of Gaian Systems",
+        "filename": "week1_reading1.pdf"
+      }
+      ],
+      "materials": [
+        {
+          "name": "Froese and Ziemke, “Enactive Artificial Intelligence: Investigating the Systemic Organization of Life and Mind” (2009)",
+          "filename": "week1_reading1.pdf"
+        },
+        {
+          "name": "Roli, Jaeger, and Kauffman, “How Organisms Come to Know the World: Fundamental Limits on Artificial General Intelligence” (2022)",
+          "filename": "week1_reading2.pdf"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Organism and Artifact",
+      "description": "We explore the differences between natural and artificial intelligence.",
+      "readings": [
+      ],
+      "materials": [
+        {
+          "name": "Rosenblueth, Wiener, and Bigelow, “Behavior, Purpose and Teleology”",
+          "filename": "week2_reading1.pdf"
+        },
+        {
+          "name": "Canguilhem, “Machine and Organism”",
+          "filename": "week2_reading2.pdf"
+        },
+        { 
+          "name": "Wiener, “What is Cybernetics?” from The Human Use of Human Beings",
+          "filename": "week2_reading3.pdf"
+        }
+      ]
+    },
+    {
+        "week": 3,
+        "title": "Approaching Autopoiesis",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+                "name": "Maturana et al, “What the Frog’s Eye Tells the Frog’s Brain”",
+                "filename": "week3_reading1.pdf"
+            }
+        ],
+        "materials": [
+          {
+            "name": "Maturana, “Biology of Cognition”",
+            "filename": "week3_reading2.pdf"
+          },
+          { 
+            "name": "Varela, Maturana, and Uribe, “Autopoiesis: The Organization of Living Systems”",
+            "filename": "week3_reading3.pdf"
+          }
+        ]
+
+      },
+      {
+        "week": 4,
+        "title": "Ecology of Mind",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+                "name": "Bateson, Steps to an Ecology of Mind, selections: “Form, Substance and Difference”, “The Roots of Ecological Crisis”",
+                "filename": "week4_reading1.pdf"
+              }
+        ],
+        "materials": [
+          {
+            "name": "Bateson, Steps to an Ecology of Mind, selections: “Cybernetic Explanation”, “Redundancy and Coding”",
+            "filename": "week4_reading1.pdf"
+          }
+        ]
+      }
+      ,
+      {
+        "week": 5,
+        "title": "Epistemological Constructivism",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+              "name": "Varela, “The Creative Circle: Sketches on the Natural History of Circularity”",
+              "filename": "week5_reading2.pdf"
+            }, 
+            {
+              "name": "Clarke, “From Information to Cognition: The Systems Counterculture, Heinz von Foerster’s Pedagogy, and Second-Order Cybernetics”",
+              "filename": "week5_reading3.pdf"
+            }
+        ],
+        "materials": [
+          {
+            "name": "Von Foerster, “On Constructing a Reality”",
+            "filename": "week5_reading1.pdf"
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Self-Reference and Biological Autonomy",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+                "name": "Varela, Principles of Biological Autonomy",
+                "filename": "week6_reading3.pdf"
+            }
+        ],
+        "materials": [
+          {
+            "name": "Varela, “On Observing Whole Systems”",
+            "filename": "week6_reading1.pdf"
+          },
+          {
+            "name": "Varela, “Not One, Not Two”",
+            "filename": "week6_reading2.pdf"
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Planetary Cognition: The Gaia Hypothesis",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+              "name": "Margulis, “Big Trouble in Biology: Physiological Autopoiesis versus Mechanistic Neo-Darwinism”",
+              "filename": "week7_reading2.pdf"
+            }, 
+            {
+              "name": "Margulis, from Symbiotic Planet: “Gaia”",
+              "filename": "week7_reading3.pdf"
+            }
+        ],
+        "materials": [
+          {
+            "name": "Margulis and Lovelock, “The Atmosphere as Circulatory System of the Biosphere — The Gaia Hypothesis”",
+            "filename": "week7_reading1.pdf"
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Neocybernetics and Gaia Theory",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+                "name": "Clarke, “Gaian Technics: Lynn Margulis, Natural Technicity, and the Technosphere”",
+                "filename": "week8_reading2.pdf"
+            }
+        ],
+        "materials": [
+          {
+            "name": "Clarke, Gaian Systems, selections: Chapter 3, “Neocybernetics of Gaia”, Chapter 8, “Planetary Immunity”",
+            "filename": "week8_reading1.pdf"
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Life and Mind",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+            {
+              "name": "Maturana and Varela, The Tree of Knowledge: The Biological Roots of Human Understanding, 2nd ed.",
+              "filename": "week9_reading2.pdf"
+            }
+        ],
+        "materials": [
+          {
+            "name": "Varela, “Patterns of Life: Intertwining Identity and Cognition”",
+            "filename": "week9_reading1.pdf"
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Whole Earth Redux",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+        ],
+        "materials": [
+        ]
+      },
+      {
+        "week": 11,
+        "title": "Abundant Intelligences",
+        "description": "We explore the differences between natural and artificial intelligence.",
+        "readings": [
+        ],
+        "materials": [
+            {
+                "name": "Lewis, Arista, Pechawis, and Kite, “Making Kin with the Machines”",
+                "filename": "week11_reading1.pdf"
+              }
+        ]
+      },
+      {
+        "week": 12,
+        "title": "Project Roundtable",
+        "description": "Intensive participants will present the project concepts they have developed throughout the course.",
+        "readings": [
+        ],
+        "materials": [
+        ]
+      }
+  ]

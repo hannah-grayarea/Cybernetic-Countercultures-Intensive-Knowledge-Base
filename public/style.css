@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Fraunces', serif;
+    font-weight: 400; /* Regular weight for body text */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: #fff2e6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#graph {
+    width: calc(100% - 450px); /* Adjusted to match new panel width */
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 0.3s ease-in-out;
+}
+
+#graph svg {
+    width: 100%;
+    height: 100%;
+}
+
+.week {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #756D65;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.week:hover {
+    background-color: #756D65;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px; /* Adjust as needed */
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body.sidebar-open #graph {
+    width: calc(100% - 450px); /* Adjust based on sidebar width */
+}
+
+body.sidebar-open .side-panel {
+    transform: translateX(0);
+}
+
+#graph text {
+    font-weight: bold;
+    fill: #333;
+}
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px; /* Increased width */
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#initial-panel {
+    z-index: 10; /* Ensure it's above the week sidebar */
+    transform: translateX(0); /* Start visible */
+}
+
+#sidebar {
+    z-index: 5;
+    transform: translateX(100%); /* Start hidden */
+}
+
+body.sidebar-closed #graph {
+    width: 100%;
+}
+
+body.sidebar-closed .side-panel {
+    transform: translateX(100%);
+}
+
+#show-intro-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #756D65;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#show-intro-button:hover {
+    background-color: #c2b2a3;
+}
+
+#title-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#title-image img {
+    max-width: 250px;
+    height: auto;
+}
+
+.panel-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.panel-close-button:hover {
+    background-color: #756D65;
+}
+
+/* Remove any visibility rules that might be hiding the sidebar */
+
+.download-link {
+    text-decoration: none;
+    color: #1a602a; /* Green color for download links */
+    transition: color 0.3s ease;
+}
+
+.download-link:visited {
+    color: #1a602a; /* Keep the same color as unvisited download links */
+}
+
+#sidebar a {
+    text-decoration: none !important;
+    color: #1a602a !important; /* Green color, change as needed */
+    transition: color 0.3s ease;
+    font-weight: 500; /* Medium weight for links */
+}
+
+#sidebar a:hover {
+    color: #1a602a !important; /* Darker green on hover, change as needed */
+}
+
+#sidebar a:visited {
+    color: #1a602a !important; /* Same as non-visited links */
+}
+
+#sidebar .reading-link {
+    text-decoration: none !important;
+    color: #17304b !important; /* Blue color for readings, change as needed */
+    transition: color 0.3s ease;
+}
+
+#sidebar .reading-link:hover {
+    text-decoration: underline !important;
+    color: #17304b !important; /* Darker blue on hover, change as needed */
+}
+
+#sidebar .material-link {
+    text-decoration: none !important;
+    color: #1a602a !important; /* Green color for materials, change as needed */
+    transition: color 0.3s ease;
+}
+
+#sidebar .material-link:hover {
+    text-decoration: underline !important;
+    color: #1a602a !important; /* Darker green on hover, change as needed */
+}
+
+/* Ensure visited links maintain their respective colors */
+#sidebar .reading-link:visited {
+    color: #17304b !important;
+}
+
+#sidebar .material-link:visited {
+    color: #1a602a !important;
+}
+
+#sidebar ul {
+    padding-left: 20px; /* Adds some indentation to the list */
+}
+
+#sidebar li {
+    margin-bottom: 10px; /* Adds space below each list item */
+}
+
+/* Remove margin from the last item to avoid extra space at the bottom of the list */
+#sidebar li:last-child {
+    margin-bottom: 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px; /* Space below the video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.week-number {
+    font-family: 'Fraunces', serif !important;
+    font-weight: 700;
+    font-size: 16px; /* Adjust as needed */
+}
+
+svg text.week-number {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 16px;
+    fill: #000; /* or whatever color you want for the text */
+}
+
+svg text, .week-number {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+svg text.week-number {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 16px;
+    fill: #000000;
+}
