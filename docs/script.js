@@ -1,5 +1,7 @@
 console.log("Script starting");
 
+let svg; // Declare svg as a global variable
+
 function initializeGraph() {
     console.log("Initializing graph");
     const elements = {
@@ -102,7 +104,7 @@ function initializeGraph() {
     }
 
     // Create SVG element
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("width", "100%");
     svg.setAttribute("height", "100%");
     svg.setAttribute("viewBox", `0 0 ${elements.graph.clientWidth} ${elements.graph.clientHeight}`);
@@ -229,6 +231,14 @@ function initializeGraph() {
     console.log("Week nodes created");
     console.log("Script completed");
 }
+
+    // Draw connections
+    drawConnections();
+
+    // Ensure the initial panel is visible
+    showInitialPanel();
+
+    console.log("Graph initialization completed");
 
 function showWeekContent(weekNumber) {
     console.log(`Showing content for week ${weekNumber}`);
