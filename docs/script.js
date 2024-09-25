@@ -1,6 +1,6 @@
 console.log("Script starting");
 
-let svg; // Declare svg as a global variable
+let svg;
 
 function initializeGraph() {
     console.log("Initializing graph");
@@ -11,6 +11,42 @@ function initializeGraph() {
         showIntroButton: document.getElementById('show-intro-button') || createElementIfMissing('show-intro-button', '', 'button', 'Help'),
         titleImageContainer: document.getElementById('title-image') || createElementIfMissing('title-image')
     };
+
+    console.log("Elements initialized:", elements);
+
+    // Create connections
+    const connections = [
+        [1, 2], [2, 3], [4, 5], [5, 6], [7, 8], [9, 10], [10, 11]
+    ];
+
+    // Calculate positions for week nodes
+    const radius = 40; // Increase this value to make bubbles larger
+    const padding = 70; // Increased padding to make room for the title
+    const width = elements.graph.clientWidth - padding * 2;
+    const height = elements.graph.clientHeight - padding * 2;
+
+    // Define fixed positions for each week
+    const fixedPositions = [
+        { x: 0.2, y: 0.2 },  // Week 1
+        { x: 0.5, y: 0.15 },  // Week 2
+        { x: 0.25, y: 0.4 },  // Week 3
+        { x: 0.6, y: 0.5 },  // Week 4
+        { x: 0.7, y: 0.25 },  // Week 5
+        { x: 0.9, y: 0.2 },  // Week 6
+        { x: 0.7, y: 0.6 },  // Week 7
+        { x: 0.65, y: 0.8 },  // Week 8
+        { x: 0.45, y: 0.6 },  // Week 9
+        { x: 0.175, y: 0.65 },  // Week 10
+        { x: 0.35, y: 0.8 },  // Week 11
+        { x: 0.8, y: 0.9 }   // Week 12
+    ];
+
+    // Create nodes with fixed positions
+    const nodes = fixedPositions.map((pos, i) => ({
+        id: i,
+        x: padding + pos.x * width,
+        y: padding + pos.y * height
+    }));
 
     // Set initial state
     document.body.classList.remove('sidebar-closed');
@@ -59,6 +95,13 @@ function initializeGraph() {
 
     console.log("Initial panel innerHTML after:", elements.initialPanel.innerHTML);
 
+     // Create SVG element
+    svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", "100%");
+    svg.setAttribute("height", "100%");
+    svg.setAttribute("viewBox", `0 0 ${elements.graph.clientWidth} ${elements.graph.clientHeight}`);
+    elements.graph.appendChild(svg);
+
     // Ensure the initial panel is visible
     showInitialPanel();
     addCloseButton(elements.initialPanel, closeInitialPanel);
@@ -103,48 +146,7 @@ function initializeGraph() {
         elements.titleImageContainer.appendChild(img);
     }
 
-    // Create SVG element
-    svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("width", "100%");
-    svg.setAttribute("height", "100%");
-    svg.setAttribute("viewBox", `0 0 ${elements.graph.clientWidth} ${elements.graph.clientHeight}`);
-    elements.graph.appendChild(svg);
-
     console.log("SVG created and appended");
-
-    // Calculate positions for week nodes
-    const radius = 40; // Increase this value to make bubbles larger
-    const padding = 70; // Increased padding to make room for the title
-    const width = elements.graph.clientWidth - padding * 2;
-    const height = elements.graph.clientHeight - padding * 2;
-
-    // Define fixed positions for each week
-    const fixedPositions = [
-        { x: 0.2, y: 0.2 },  // Week 1
-        { x: 0.5, y: 0.15 },  // Week 2
-        { x: 0.25, y: 0.4 },  // Week 3
-        { x: 0.6, y: 0.5 },  // Week 4
-        { x: 0.7, y: 0.25 },  // Week 5
-        { x: 0.9, y: 0.2 },  // Week 6
-        { x: 0.7, y: 0.6 },  // Week 7
-        { x: 0.65, y: 0.8 },  // Week 8
-        { x: 0.45, y: 0.6 },  // Week 9
-        { x: 0.175, y: 0.65 },  // Week 10
-        { x: 0.35, y: 0.8 },  // Week 11
-        { x: 0.8, y: 0.9 }   // Week 12
-    ];
-
-    // Create nodes with fixed positions
-    const nodes = fixedPositions.map((pos, i) => ({
-        id: i,
-        x: padding + pos.x * width,
-        y: padding + pos.y * height
-    }));
-
-    // Create connections
-    const connections = [
-        [1, 2], [2, 3], [4, 5], [5, 6], [7, 8], [9, 10], [10, 11]
-    ];
 
     // Draw connections
     function drawConnections() {
@@ -232,14 +234,6 @@ function initializeGraph() {
     console.log("Script completed");
 }
 
-    // Draw connections
-    drawConnections();
-
-    // Ensure the initial panel is visible
-    showInitialPanel();
-
-    console.log("Graph initialization completed");
-
 function showWeekContent(weekNumber) {
     console.log(`Showing content for week ${weekNumber}`);
     const sidebar = document.getElementById('sidebar');
@@ -325,6 +319,3 @@ if (document.readyState === "loading") {
 window.addEventListener('resize', () => {
     drawConnections(); // This will handle everything now
 });
-
-// Add this line at the end of the file
-console.log("Script loaded and executed");
