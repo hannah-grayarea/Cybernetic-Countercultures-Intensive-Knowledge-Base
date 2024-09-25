@@ -141,7 +141,7 @@ function initializeGraph() {
     // Insert title image
     if (!elements.titleImageContainer.querySelector('img')) {
         const img = document.createElement('img');
-        img.src = '/ccilogo.png'; // Update this path to match your image file location
+        img.src = './ccilogo.png'; // Update this path to match your image file location
         img.alt = 'Course Title';
         elements.titleImageContainer.appendChild(img);
     }
