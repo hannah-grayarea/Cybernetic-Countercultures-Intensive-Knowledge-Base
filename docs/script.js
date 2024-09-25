@@ -57,6 +57,9 @@ function initializeGraph() {
 
     console.log("Initial panel innerHTML after:", elements.initialPanel.innerHTML);
 
+    // Ensure the initial panel is visible
+    showInitialPanel();
+
     // Function to show initial panel
     function showInitialPanel() {
         document.body.classList.remove('sidebar-closed');
@@ -307,3 +310,6 @@ if (document.readyState === "loading") {
 window.addEventListener('resize', () => {
     drawConnections(); // This will handle everything now
 });
+
+// Add this line at the end of the file
+console.log("Script loaded and executed");
