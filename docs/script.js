@@ -59,6 +59,7 @@ function initializeGraph() {
 
     // Ensure the initial panel is visible
     showInitialPanel();
+    addCloseButton(elements.initialPanel, closeInitialPanel);
 
     // Function to show initial panel
     function showInitialPanel() {
@@ -299,6 +300,10 @@ fetch('weekDetails.json')
 function downloadFile(filename) {
     window.location.href = `/course-files/${filename}`;
 }
+
+// Make sure these functions are defined in the global scope
+window.closeSidebar = closeSidebar;
+window.showWeekContent = showWeekContent;
 
 // Call initializeGraph when the DOM is fully loaded
 if (document.readyState === "loading") {
