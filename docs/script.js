@@ -250,7 +250,7 @@ function showWeekContent(weekNumber) {
             let materialsHTML = '';
             let readingsHTML = '';
             let slidesHTML = '';
-
+            let guestHTML = '';
             // Only create the Suggested Readings section if there are materials
             if (weekDetail.materials && weekDetail.materials.length > 0) {
                 materialsHTML = `
@@ -287,10 +287,19 @@ function showWeekContent(weekNumber) {
                 `;
             }
 
+            // Only create the Guest section if there is a guest
+            if (weekDetail.guest) {
+                guestHTML = `
+                    <h3>Guest:</h3>
+                    <p>${weekDetail.guest}</p>
+                `;
+            }
+
             sidebar.innerHTML = `
                 <button class="panel-close-button" onclick="closeSidebar()">&times;</button>
                 <h2>Week ${weekNumber}: ${weekDetail.date}</h2>
                 <h2>${weekDetail.title}</h2>
+                ${guestHTML}
                 <p>${weekDetail.description}</p>
                 ${materialsHTML}
                 ${readingsHTML}

@@ -73,6 +73,7 @@
         "date": "October 21",
         "title": "Ecology of Mind: Gregory Bateson",
         "description": "We explore the differences between natural and artificial intelligence.",
+        "guest": "Stephen Nachmanovitch",
         "readings": [
             {
                 "name": "Bateson, Steps to an Ecology of Mind, selections: “Cybernetic Explanation” and “Form, Substance and Difference”",
@@ -142,6 +143,7 @@
         "date": "November 11",
         "title": "Planetary Cognition: James Lovelock and Lynn Margulis",
         "description": "We explore the differences between natural and artificial intelligence.",
+        "guest": "Erik Davis",
         "readings": [
             {
               "name": "Margulis, “Big Trouble in Biology: Physiological Autopoiesis versus Mechanistic Neo-Darwinism”",
@@ -186,6 +188,7 @@
         "date": "November 25",
         "title": "Life and Mind: selections from William Irwin Thompson, ed.,",
         "description": "We explore the differences between natural and artificial intelligence.",
+        "guest": "Evan Thompson",
         "readings": [
             {
               "name": "Maturana and Varela, The Tree of Knowledge: The Biological Roots of Human Understanding, 2nd ed.",
