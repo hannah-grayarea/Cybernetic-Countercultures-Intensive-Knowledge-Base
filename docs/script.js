@@ -290,8 +290,7 @@ function showWeekContent(weekNumber) {
             // Only create the Guest section if there is a guest
             if (weekDetail.guest) {
                 guestHTML = `
-                    <h3>Guest:</h3>
-                    <p>${weekDetail.guest}</p>
+                    <h3>Guest: ${weekDetail.guest}</h3>
                 `;
             }
 
