@@ -249,6 +249,7 @@ function showWeekContent(weekNumber) {
         if (weekDetail) {
             let materialsHTML = '';
             let readingsHTML = '';
+            let slidesHTML = '';
 
             // Only create the Suggested Readings section if there are materials
             if (weekDetail.materials && weekDetail.materials.length > 0) {
@@ -276,7 +277,7 @@ function showWeekContent(weekNumber) {
 
             // Only create the Slides section if there are slides
             if (weekDetail.slides && weekDetail.slides.length > 0) {
-                readingsHTML = `
+                slidesHTML = `
                     <h3>Lecture Slides:</h3>
                     <ul>
                         ${weekDetail.slides.map(slides => 
