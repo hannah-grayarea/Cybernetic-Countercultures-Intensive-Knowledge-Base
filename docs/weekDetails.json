@@ -7,6 +7,16 @@
       "readings": [
       ],
       "materials": [
+      ],
+      "slides": [
+        {
+          "name": "Introduction to CCI",
+          "filename": "week1_slides1.pdf"
+        },
+        {
+          "name": "The Problem with Intelligence",
+          "filename": "week1_slides2.pdf"
+        }
       ]
     },
     {
@@ -28,6 +38,10 @@
         {
           "name": "Rosenblueth, Wiener, and Bigelow, “Behavior, Purpose and Teleology”",
           "filename": "week2_reading1.pdf"
+        }
+      ],
+      "slides": [
+        {
         }
       ]
     },
@@ -51,6 +65,10 @@
             "name": "Varela, Maturana, and Uribe, “Autopoiesis: The Organization of Living Systems”",
             "filename": "week3_reading3.pdf"
           }
+        ],
+        "slides": [
+          {
+          }
         ]
 
       },
@@ -69,6 +87,10 @@
           {
             "name": "Bateson, Steps to an Ecology of Mind, selections: “The Roots of Ecological Crisis”, “Redundancy and Coding”",
             "filename": "week4_reading2.pdf"
+          }
+        ],
+        "slides": [
+          {
           }
         ]
       }
@@ -93,6 +115,10 @@
             "name": "Von Foerster, “On Constructing a Reality”",
             "filename": "week5_reading1.pdf"
           }
+        ],
+        "slides": [
+          {
+          }
         ]
       },
       {
@@ -114,6 +140,10 @@
           {
             "name": "Varela, “On Observing Whole Systems”",
             "filename": "week6_reading1.pdf"
+          }
+        ],
+        "slides": [
+          {
           }
         ]
       },
@@ -137,6 +167,10 @@
             "name": "Margulis and Lovelock, “The Atmosphere as Circulatory System of the Biosphere — The Gaia Hypothesis”",
             "filename": "week7_reading1.pdf"
           }
+        ],
+        "slides": [
+          {
+          }
         ]
       },
       {
@@ -154,6 +188,10 @@
           {
             "name": "Clarke, Gaian Systems, selections: Chapter 3, “Neocybernetics of Gaia”, Chapter 8, “Planetary Immunity”",
             "filename": "week8_reading1.pdf"
+          }
+        ],
+        "slides": [
+          {
           }
         ]
       },
@@ -173,6 +211,10 @@
             "name": "Varela, “Patterns of Life: Intertwining Identity and Cognition”",
             "filename": "week9_reading1.pdf"
           }
+        ],
+        "slides": [
+          {
+          }
         ]
       },
       {
@@ -183,6 +225,10 @@
         "readings": [
         ],
         "materials": [
+        ],
+        "slides": [
+          {
+          }
         ]
       },
       {
@@ -197,6 +243,10 @@
                 "name": "Lewis, Arista, Pechawis, and Kite, “Making Kin with the Machines”",
                 "filename": "week11_reading1.pdf"
               }
+        ],
+        "slides": [
+          {
+          }
         ]
       },
       {
@@ -207,6 +257,10 @@
         "readings": [
         ],
         "materials": [
+        ],
+        "slides": [
+          {
+          }
         ]
       }
   ]

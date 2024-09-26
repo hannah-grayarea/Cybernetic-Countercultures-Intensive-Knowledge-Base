@@ -274,6 +274,18 @@ function showWeekContent(weekNumber) {
                 `;
             }
 
+            // Only create the Slides section if there are slides
+            if (weekDetail.slides && weekDetail.slides.length > 0) {
+                readingsHTML = `
+                    <h3>Lecture Slides:</h3>
+                    <ul>
+                        ${weekDetail.slides.map(slides => 
+                            `<li><a href="#" onclick="downloadFile('${slides.filename}')">${slides.name}</a></li>`
+                        ).join('')}
+                    </ul>
+                `;
+            }
+
             sidebar.innerHTML = `
                 <button class="panel-close-button" onclick="closeSidebar()">&times;</button>
                 <h2>Week ${weekNumber}: ${weekDetail.date}</h2>
@@ -281,6 +293,7 @@ function showWeekContent(weekNumber) {
                 <p>${weekDetail.description}</p>
                 ${materialsHTML}
                 ${readingsHTML}
+                ${slidesHTML}
             `;
         } else {
             sidebar.innerHTML = `
