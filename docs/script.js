@@ -1,5 +1,16 @@
 console.log("Script starting");
 
+// Check authentication
+if (!localStorage.getItem('isAuthenticated')) {
+    window.location.href = 'login.html';
+}
+
+// Add logout function
+function logout() {
+    localStorage.removeItem('isAuthenticated');
+    window.location.href = 'login.html';
+}
+
 let svg;
 
 function initializeGraph() {

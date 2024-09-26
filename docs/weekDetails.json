@@ -190,15 +190,15 @@
         "description": "We explore the differences between natural and artificial intelligence.",
         "guest": "Evan Thompson",
         "readings": [
-            {
-              "name": "Maturana and Varela, The Tree of Knowledge: The Biological Roots of Human Understanding, 2nd ed.",
-              "filename": "week9_reading2.pdf"
-            }
         ],
         "materials": [
           {
-            "name": "Varela, “Patterns of Life: Intertwining Identity and Cognition”",
+            "name": "Gaia, A Way of Knowing: Political Implications of the New Biology",
             "filename": "week9_reading1.pdf"
+          },
+          {
+            "name": "Gaia 2, Emergence: The New Science of Becoming",
+            "filename": "week9_reading2.pdf"
           }
         ],
         "slides": [
