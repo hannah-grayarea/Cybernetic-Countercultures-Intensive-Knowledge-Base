@@ -247,23 +247,40 @@ function showWeekContent(weekNumber) {
         const weekDetail = weekDetails.find(detail => detail.week === weekNumber);
         
         if (weekDetail) {
+            let materialsHTML = '';
+            let readingsHTML = '';
+
+            // Only create the Suggested Readings section if there are materials
+            if (weekDetail.materials && weekDetail.materials.length > 0) {
+                materialsHTML = `
+                    <h3>Suggested Readings:</h3>
+                    <ul>
+                        ${weekDetail.materials.map(material => 
+                            `<li><a href="#" onclick="downloadFile('${material.filename}')">${material.name}</a></li>`
+                        ).join('')}
+                    </ul>
+                `;
+            }
+
+            // Only create the Additional Materials section if there are readings
+            if (weekDetail.readings && weekDetail.readings.length > 0) {
+                readingsHTML = `
+                    <h3>Additional Materials:</h3>
+                    <ul>
+                        ${weekDetail.readings.map(reading => 
+                            `<li><a href="#" onclick="downloadFile('${reading.filename}')">${reading.name}</a></li>`
+                        ).join('')}
+                    </ul>
+                `;
+            }
+
             sidebar.innerHTML = `
                 <button class="panel-close-button" onclick="closeSidebar()">&times;</button>
                 <h2>Week ${weekNumber}: ${weekDetail.date}</h2>
                 <h2>${weekDetail.title}</h2>
                 <p>${weekDetail.description}</p>
-                <h3>Suggested Readings:</h3>
-                <ul>
-                    ${weekDetail.materials ? weekDetail.materials.map(material => 
-                        `<li><a href="#" onclick="downloadFile('${material.filename}')">${material.name}</a></li>`
-                    ).join('') : 'No materials available'}
-                </ul>
-                <h3>Additional Materials:</h3>
-                <ul>
-                    ${weekDetail.readings ? weekDetail.readings.map(readings => 
-                        `<li><a href="#" onclick="downloadFile('${readings.filename}')">${readings.name}</a></li>`
-                    ).join('') : 'No readings available'}
-                </ul>
+                ${materialsHTML}
+                ${readingsHTML}
             `;
         } else {
             sidebar.innerHTML = `
