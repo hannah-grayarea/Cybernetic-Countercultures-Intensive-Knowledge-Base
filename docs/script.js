@@ -249,7 +249,7 @@ function showWeekContent(weekNumber) {
         if (weekDetail) {
             sidebar.innerHTML = `
                 <button class="panel-close-button" onclick="closeSidebar()">&times;</button>
-                <h2>Week ${weekNumber}</h2>
+                <h2>Week ${weekNumber}: ${weekDetail.date}</h2>
                 <h2>${weekDetail.title}</h2>
                 <p>${weekDetail.description}</p>
                 <h3>Suggested Readings:</h3>

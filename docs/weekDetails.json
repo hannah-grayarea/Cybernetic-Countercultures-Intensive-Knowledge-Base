@@ -1,6 +1,7 @@
 [
     {
       "week": 1,
+      "date": "September 30",
       "title": "Introduction: The Whole Earth Network, Organic Cybernetics, and the Problem with Intelligence",
       "description": "This week introduces the core concepts and challenges in understanding intelligence.",
       "readings": [
@@ -10,7 +11,8 @@
     },
     {
       "week": 2,
-      "title": "Organism and Artifact",
+      "date": "October 7",
+      "title": "Organism and Artifact: Norbert Wiener",
       "description": "We explore the differences between natural and artificial intelligence.",
       "readings": [
         {
@@ -31,7 +33,8 @@
     },
     {
         "week": 3,
-        "title": "Approaching Autopoiesis",
+        "date": "October 14",
+        "title": "Approaching Autopoiesis: Maturana and Varela",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -53,7 +56,8 @@
       },
       {
         "week": 4,
-        "title": "Ecology of Mind",
+        "date": "October 21",
+        "title": "Ecology of Mind: Gregory Bateson",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -71,7 +75,8 @@
       ,
       {
         "week": 5,
-        "title": "Epistemological Constructivism",
+        "date": "October 28",
+        "title": "Epistemological Constructivism: Heinz von Foerster",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -92,7 +97,8 @@
       },
       {
         "week": 6,
-        "title": "Self-Reference and Biological Autonomy",
+        "date": "November 4",
+        "title": "Self-Reference and Biological Autonomy: Francisco Varela",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -102,18 +108,19 @@
         ],
         "materials": [
           {
-            "name": "Varela, “On Observing Whole Systems”",
-            "filename": "week6_reading1.pdf"
-          },
-          {
             "name": "Varela, “Not One, Not Two”",
             "filename": "week6_reading2.pdf"
+          },
+          {
+            "name": "Varela, “On Observing Whole Systems”",
+            "filename": "week6_reading1.pdf"
           }
         ]
       },
       {
         "week": 7,
-        "title": "Planetary Cognition: The Gaia Hypothesis",
+        "date": "November 11",
+        "title": "Planetary Cognition: James Lovelock and Lynn Margulis",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -134,7 +141,8 @@
       },
       {
         "week": 8,
-        "title": "Neocybernetics and Gaia Theory",
+        "date": "November 18",
+        "title": "Neocybernetics and Gaia: Bruce Clarke",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -151,7 +159,8 @@
       },
       {
         "week": 9,
-        "title": "Life and Mind",
+        "date": "November 25",
+        "title": "Life and Mind: selections from William Irwin Thompson, ed.,",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
             {
@@ -168,6 +177,7 @@
       },
       {
         "week": 10,
+        "date": "December 2",
         "title": "Whole Earth Redux",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
@@ -177,6 +187,7 @@
       },
       {
         "week": 11,
+        "date": "December 9",
         "title": "Abundant Intelligences",
         "description": "We explore the differences between natural and artificial intelligence.",
         "readings": [
@@ -190,6 +201,7 @@
       },
       {
         "week": 12,
+        "date": "December 16",
         "title": "Project Roundtable",
         "description": "Intensive participants will present the project concepts they have developed throughout the course.",
         "readings": [
