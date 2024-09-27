@@ -298,7 +298,7 @@ function showWeekContent(weekNumber) {
                     <h3>Suggested Readings:</h3>
                     <ul>
                         ${weekDetail.links.map(links => 
-                            `<li><a href="#" onclick="downloadFile('${links.link}')">${links.name}</a></li>`
+                            `<li><a href="${links.link}" target="_blank">${link.name}</a></li>`
                         ).join('')}
                     </ul>
                 `;
