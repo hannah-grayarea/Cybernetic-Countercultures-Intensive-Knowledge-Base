@@ -2,38 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Structure</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cybernetic Countercultures Intensive</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&display=swap">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        console.log("D3 version:", d3.version);
+    </script>
+    <script src="script.js" defer></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
-        
-        svg text {
-            font-family: 'Fraunces', serif !important;
+        body {
+            font-family: 'Fraunces', serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Login Overlay Styles */
+        #login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 242, 230, 0.95); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        #login-container h2 {
+            margin-bottom: 20px;
+        }
+        #login-container input {
+            width: 100%;
+            max-width: 250px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #login-container button {
+            width: 100%;
+            max-width: 250px;
+            padding: 10px;
+            background-color: #f28e1c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #login-container button:hover {
+            background-color: #d17a00;
+        }
+        /* Hide main content initially */
+        #main-content {
+            display: none;
+            padding: 20px;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="title-image"></div>
-    <div id="graph"></div>
-    <div id="sidebar" class="side-panel"></div>
-    <div id="initial-panel" class="side-panel">
-        <!-- Content for initial panel -->
+    <!-- Login Overlay -->
+    <div id="login-overlay">
+        <div id="login-container">
+            <h2>Cybernetic Countercultures Intensive</h2>
+            <input type="password" id="password" placeholder="Enter password">
+            <button id="submit-button">Submit</button>
+        </div>
     </div>
-    <button id="show-intro-button">Help</button>
-    <script src="script.js"></script>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <div id="graph"></div>
+        <div id="sidebar"></div>
+        <div id="initial-panel"></div>
+        <button id="show-intro-button">Help</button>
+        <div id="title-image"></div>
+    </div>
+
     <script>
-        document.fonts.ready.then(function () {
-            if (document.fonts.check('1em Fraunces')) {
-                console.log('Fraunces font is loaded and ready');
-            } else {
-                console.log('Fraunces font failed to load');
+        (function() {
+            const loginOverlay = document.getElementById('login-overlay');
+            const passwordInput = document.getElementById('password');
+            const submitButton = document.getElementById('submit-button');
+            const mainContent = document.getElementById('main-content');
+            const logoutButton = document.getElementById('logout-button');
+
+            // Function to show main content
+            function showMainContent() {
+                document.getElementById('login-overlay').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                console.log('Main content displayed. Calling initializeGraph...');
+                setTimeout(() => {
+                    initializeGraph();
+                }, 0);
             }
-        });
+
+            // Function to show login overlay
+            function showLoginOverlay() {
+                loginOverlay.style.display = 'flex';
+                mainContent.style.display = 'none';
+                console.log('User not authenticated. Login overlay displayed.');
+            }
+
+            // Function to handle login
+            function checkPassword() {
+                const password = passwordInput.value;
+                const correctPassword = 'Heinz24'; // Replace with your desired password
+
+                console.log('Attempting authentication with password:', password);
+
+                if (password === correctPassword) {
+                    sessionStorage.setItem('authenticated', 'true');
+                    console.log('Authentication successful. Displaying main content.');
+                    showMainContent();
+                } else {
+                    alert('Incorrect password. Please try again.');
+                    console.log('Authentication failed.');
+                }
+            }
+
+            // Event listeners
+            submitButton.addEventListener('click', function() {
+                console.log('Submit button clicked.');
+                checkPassword();
+            });
+            passwordInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    console.log('Enter key pressed in password input.');
+                    checkPassword();
+                }
+            });
+            
+            // Initial check on page load
+            function initialize() {
+                const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
+                console.log('Authentication status on load:', isAuthenticated);
+
+                if (isAuthenticated) {
+                    showMainContent();
+                } else {
+                    showLoginOverlay();
+                }
+            }
+
+            // Call initialize on DOMContentLoaded
+            document.addEventListener('DOMContentLoaded', initialize);
+        })();
     </script>
 </body>
 </html>
