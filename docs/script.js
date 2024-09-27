@@ -279,6 +279,7 @@ function showWeekContent(weekNumber) {
             let readingsHTML = '';
             let slidesHTML = '';
             let guestHTML = '';
+            let linksHTML = '';
             // Only create the Suggested Readings section if there are materials
             if (weekDetail.materials && weekDetail.materials.length > 0) {
                 materialsHTML = `
@@ -286,6 +287,18 @@ function showWeekContent(weekNumber) {
                     <ul>
                         ${weekDetail.materials.map(material => 
                             `<li><a href="#" onclick="downloadFile('${material.filename}')">${material.name}</a></li>`
+                        ).join('')}
+                    </ul>
+                `;
+            }
+
+            // Only create the Linked Readings section if there are links
+            if (weekDetail.links && weekDetail.links.length > 0) {
+                linksHTML = `
+                    <h3>Suggested Readings:</h3>
+                    <ul>
+                        ${weekDetail.links.map(links => 
+                            `<li><a href="#" onclick="downloadFile('${links.link}')">${links.name}</a></li>`
                         ).join('')}
                     </ul>
                 `;
@@ -329,6 +342,7 @@ function showWeekContent(weekNumber) {
                 ${guestHTML}
                 <p>${weekDetail.description}</p>
                 ${materialsHTML}
+                ${linksHTML}
                 ${readingsHTML}
                 ${slidesHTML}
             `;

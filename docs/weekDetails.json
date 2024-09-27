@@ -3,51 +3,75 @@
       "week": 1,
       "date": "September 30",
       "title": "Introduction: The Whole Earth Network, Organic Cybernetics, and the Problem with Intelligence",
-      "description": "This week introduces the core concepts and challenges in understanding intelligence.",
+      "description": "An introduction to the Cybernetic Countercultures and the core concepts of organic cybernetics. Exploring the distinction between cognition and intelligence.",
       "readings": [
+        {
+          "name": "Clarke, “The Whole Earth Network,” in Gaian Systems, chapter 4",
+          "filename": "week8_reading1"
+        },
+        { 
+          "name": "Roli, Jaeger, and Kauffman, “How Organisms Come to Know the World: Fundamental Limits on Artificial General Intelligence",
+          "filename": "week1_reading3.pdf"
+        }
       ],
       "materials": [
       ],
       "slides": [
+      ],
+      "links": [
+        {
+          "name": "“Understanding Whole Systems” in each Whole Earth Catalog and CoEvolution Quarterly",
+          "link": "https://wholeearth.info/"
+        }
       ]
     },
     {
       "week": 2,
       "date": "October 7",
       "title": "Organism and Artifact: Norbert Wiener",
-      "description": "We explore the differences between natural and artificial intelligence.",
+      "description": "Organic cybernetics and the mechanistic worldview. Physics envy, feedback, and the reversal of Descartes.",
       "readings": [
         {
           "name": "Canguilhem, “Machine and Organism”",
-          "filename": "week2_reading2.pdf"
+          "filename": "week2_reading3.pdf"
         },
         { 
-          "name": "Wiener, “What is Cybernetics?” from The Human Use of Human Beings",
-          "filename": "week2_reading3.pdf"
+          "name": "Wiener, The Human Use of Human Beings",
+          "filename": "week2_reading4.pdf"
         }
       ],
       "materials": [
         {
           "name": "Rosenblueth, Wiener, and Bigelow, “Behavior, Purpose and Teleology”",
           "filename": "week2_reading1.pdf"
+        },
+        { 
+          "name": "Wiener, “What is Cybernetics?”",
+          "filename": "week2_reading2.pdf"
         }
       ],
       "slides": [
+      ],
+      "links": [
       ]
     },
     {
         "week": 3,
         "date": "October 14",
         "title": "Approaching Autopoiesis: Maturana and Varela",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "Living systems: the genesis and early journey of the concept of autopoiesis. From Santiago to the Cybernetic Countercultures.",
         "readings": [
             {
-                "name": "Maturana et al, “What the Frog’s Eye Tells the Frog’s Brain”",
+                "name": "Varela, “The Early Days of Autopoiesis”",
                 "filename": "week3_reading1.pdf"
             },
             {
-              "name": "Maturana, “Biology of Cognition”",
+              "name": "Maturana and Varela, Autopoiesis and Cognition",
               "filename": "week3_reading2.pdf"
+            },
+            {
+              "name": "Maturana and Varela, The Tree of Knowledge: The Biological Roots of Human Understanding, 2nd ed.",
+              "filename": "week3_reading4.pdf"
             }
         ],
         "materials": [
@@ -57,6 +81,8 @@
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
 
       },
@@ -64,21 +90,35 @@
         "week": 4,
         "date": "October 21",
         "title": "Ecology of Mind: Gregory Bateson",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "Gregory Bateson’s nomadic trail to the Cybernetic Countercultures. Rethinking cybernetics and information theory through ecology.",
         "guest": "Stephen Nachmanovitch",
         "readings": [
             {
-                "name": "Bateson, Steps to an Ecology of Mind, selections: “The Roots of Ecological Crisis”, “Redundancy and Coding”",
-                "filename": "week4_reading1.pdf"
-              }
+                "name": "Stewart Brand, “For God’s Sake, Margaret: Conversation with Gregory Bateson and Margaret Mead,” CoEvolution Quarterly 10 (Summer 1976): 32-44.",
+                "filename": "week4_reading2.pdf"
+            },
+            {
+              "name": "Guddemi, Gregory Bateson and Relational Communication",
+              "filename": "week4_reading3.pdf"
+            },
+            {
+              "name": "Herbert, “The Ecology of Dune”",
+              "filename": "week4_reading4.pdf"
+            },
+            {
+              "name": "Nachmanovitch, “Being Whole”",
+              "filename": "week4_reading5.pdf"
+            }
         ],
         "materials": [
           {
-            "name": "Bateson, Steps to an Ecology of Mind, selections: “Cybernetic Explanation” and “Form, Substance and Difference”",
-            "filename": "week4_reading2.pdf"
+            "name": "Bateson, Steps to an Ecology of Mind, selections: “Cybernetic Explanation,” “Effects of Conscious Purpose on Human Adaptation,” and “Form, Substance and Difference”",
+            "filename": "week4_reading1.pdf"
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       }
       ,
@@ -86,10 +126,10 @@
         "week": 5,
         "date": "October 28",
         "title": "Epistemological Constructivism: Heinz von Foerster",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "From information to cognition: von Foerster’s journey from self-organizing systems to Laws of Form",
         "readings": [
             {
-              "name": "Varela, “The Creative Circle: Sketches on the Natural History of Circularity”",
+              "name": "Clarke, “Heinz von Foerster’s Demons”",
               "filename": "week5_reading2.pdf"
             }, 
             {
@@ -101,48 +141,60 @@
           {
             "name": "Von Foerster, “On Constructing a Reality”",
             "filename": "week5_reading1.pdf"
+          },
+          {
+            "name": "Von Foerster, “On Self-Organizing Systems and Their Environments”",
+            "filename": "week5_reading4.pdf"
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
         "week": 6,
         "date": "November 4",
         "title": "Self-Reference and Biological Autonomy: Francisco Varela",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "After autopoiesis: Francisco Varela’s cybernetic harvest among the Cybernetic Countercultures.",
         "readings": [
             {
                 "name": "Varela, Principles of Biological Autonomy",
                 "filename": "week6_reading3.pdf"
+            },
+            {
+              "name": "Varela, “The Creative Circle: Sketches on the Natural History of Circularity”",
+              "filename": "week6_reading4.pdf"
             }
         ],
         "materials": [
           {
-            "name": "Varela, “Not One, Not Two”",
-            "filename": "week6_reading2.pdf"
+            "name": "Varela with Barbara Johnson: “On Observing Natural Systems” (Summer 1976)",
+            "filename": "week6_reading1.pdf"
           },
           {
-            "name": "Varela, “On Observing Whole Systems”",
-            "filename": "week6_reading1.pdf"
+            "name": "Varela, “Not One, Not Two” (Fall 1976)",
+            "filename": "week6_reading2.pdf"
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
         "week": 7,
         "date": "November 11",
         "title": "Planetary Cognition: James Lovelock and Lynn Margulis",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "A maverick scientific collaboration drops into the Cybernetic Countercultures on their way to changing the world.",
         "guest": "Erik Davis",
         "readings": [
             {
-              "name": "Margulis, “Big Trouble in Biology: Physiological Autopoiesis versus Mechanistic Neo-Darwinism”",
+              "name": "Lovelock, “Cybernetics”",
               "filename": "week7_reading2.pdf"
             }, 
             {
-              "name": "Margulis, from Symbiotic Planet: “Gaia”",
+              "name": "Margulis and Lovelock, “Biological Modulation of the Earth’s Atmosphere”",
               "filename": "week7_reading3.pdf"
             }
         ],
@@ -153,40 +205,52 @@
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
         "week": 8,
         "date": "November 18",
         "title": "Neocybernetics and Gaia: Bruce Clarke",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "Lynn Margulis brings planetary autopoiesis to her paradigm-shifting work on symbiosis.",
         "readings": [
             {
-                "name": "Clarke, “Gaian Technics: Lynn Margulis, Natural Technicity, and the Technosphere”",
+                "name": "Margulis, “Big Trouble in Biology”",
                 "filename": "week8_reading2.pdf"
+            }, 
+            {
+              "name": "Clarke, “Evolutionary Equality”",
+              "filename": "week8_reading3.pdf"
             }
         ],
         "materials": [
           {
-            "name": "Clarke, Gaian Systems, selections: Chapter 3, “Neocybernetics of Gaia”, Chapter 8, “Planetary Immunity”",
+            "name": "Clarke, Gaian Systems, selections: Chapter 3, “Neocybernetics of Gaia”, Chapter 6, “Margulis and Autopoiesis”",
             "filename": "week8_reading1.pdf"
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
         "week": 9,
         "date": "November 25",
         "title": "Life and Mind: selections from William Irwin Thompson, ed.,",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "The 1981 Lindisfarne Fellows meeting at Green Gulch Zen Center as a reunion of the Cybernetic Countercultures. Emergent recognitions of Gaian cognition.",
         "guest": "Evan Thompson",
         "readings": [
-        ],
-        "materials": [
           {
             "name": "Gaia, A Way of Knowing: Political Implications of the New Biology",
             "filename": "week9_reading1.pdf"
+          }
+        ],
+        "materials": [
+          {
+            "name": "Froese and Ziemke, “Enactive Artificial Intelligence: Investigating the Systemic Organization of Life and Mind”",
+            "filename": "week9_reading3.pdf"
           },
           {
             "name": "Gaia 2, Emergence: The New Science of Becoming",
@@ -194,25 +258,29 @@
           }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
         "week": 10,
         "date": "December 2",
         "title": "Whole Earth Redux",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "",
         "readings": [
         ],
         "materials": [
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
         "week": 11,
         "date": "December 9",
         "title": "Abundant Intelligences",
-        "description": "We explore the differences between natural and artificial intelligence.",
+        "description": "",
         "readings": [
         ],
         "materials": [
@@ -222,6 +290,8 @@
               }
         ],
         "slides": [
+        ],
+        "links": [
         ]
       },
       {
@@ -234,6 +304,8 @@
         "materials": [
         ],
         "slides": [
+        ],
+        "links": [
         ]
       }
   ]
