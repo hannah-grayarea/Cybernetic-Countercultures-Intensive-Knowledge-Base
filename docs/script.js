@@ -292,13 +292,13 @@ function showWeekContent(weekNumber) {
                 `;
             }
 
-            // Only create the Linked Readings section if there are links
+            // Update the links section
             if (weekDetail.links && weekDetail.links.length > 0) {
                 linksHTML = `
                     <h3>Suggested Readings:</h3>
                     <ul>
-                        ${weekDetail.links.map(links => 
-                            `<li><a href="${links.link}" target="_blank">${link.name}</a></li>`
+                        ${weekDetail.links.map(link => 
+                            `<li><a href="${link.link}" target="_blank">${link.name}</a></li>`
                         ).join('')}
                     </ul>
                 `;
