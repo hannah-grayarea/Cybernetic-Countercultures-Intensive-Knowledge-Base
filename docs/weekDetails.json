@@ -243,12 +243,6 @@
         "guest": "Evan Thompson",
         "readings": [
           {
-            "name": "Gaia, A Way of Knowing: Political Implications of the New Biology",
-            "filename": "week9_reading1.pdf"
-          }
-        ],
-        "materials": [
-          {
             "name": "Froese and Ziemke, “Enactive Artificial Intelligence: Investigating the Systemic Organization of Life and Mind”",
             "filename": "week9_reading3.pdf"
           },
@@ -260,6 +254,12 @@
           {
             "name": "Varela, Thompson, and Rosch, The Embodied Mind",
             "filename": "week9_reading4.pdf"
+          }
+        ],
+        "materials": [
+          {
+            "name": "Gaia, A Way of Knowing: Political Implications of the New Biology",
+            "filename": "week9_reading1.pdf"
           }
         ],
         "slides": [
