@@ -245,10 +245,6 @@
           {
             "name": "Gaia, A Way of Knowing: Political Implications of the New Biology",
             "filename": "week9_reading1.pdf"
-          },
-          {
-            "name": "Varela, Thompson, and Rosch, The Embodied Mind",
-            "filename": "week9_reading4.pdf"
           }
         ],
         "materials": [
@@ -259,6 +255,11 @@
           {
             "name": "Gaia 2, Emergence: The New Science of Becoming",
             "filename": "week9_reading2.pdf"
+          }
+          ,
+          {
+            "name": "Varela, Thompson, and Rosch, The Embodied Mind",
+            "filename": "week9_reading4.pdf"
           }
         ],
         "slides": [
@@ -288,10 +289,6 @@
         "readings": [
         ],
         "materials": [
-            {
-                "name": "Lewis, Arista, Pechawis, and Kite, “Making Kin with the Machines”",
-                "filename": "week11_reading1.pdf"
-              }
         ],
         "slides": [
         ],
