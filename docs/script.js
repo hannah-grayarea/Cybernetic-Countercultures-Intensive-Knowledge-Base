@@ -328,12 +328,11 @@ function showWeekContent(weekNumber) {
             if (weekDetail.recordings && weekDetail.recordings.length > 0) {
                 recordingsHTML = `
                     <h3>Session Recording:</h3>
-                    <ul>
-                        ${weekDetail.recordings.map(recording => 
-                            `<li><a href="${recording.link}" target="_blank">${recording.name}</a></li>`
-                            `<iframe width="560" height="315" src=('${slides.link}') frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-                        ).join('')}
-                    </ul>
+                    ${weekDetail.recordings.map(recording => 
+                        `<div class="video-container">
+                            <iframe width="560" height="315" src="${recording.link}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>`
+                    ).join('')}
                 `;
             }
 
