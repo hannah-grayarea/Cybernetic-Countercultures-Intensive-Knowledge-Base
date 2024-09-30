@@ -277,11 +277,10 @@ function showWeekContent(weekNumber) {
         if (weekDetail) {
             let materialsHTML = '';
             let readingsHTML = '';
-            let slidesHTML = '';
             let guestHTML = '';
             let linksHTML = '';
             let recordingsHTML = '';
-            
+
             // Only create the Suggested Readings section if there are materials
             if (weekDetail.materials && weekDetail.materials.length > 0) {
                 materialsHTML = `
@@ -318,18 +317,6 @@ function showWeekContent(weekNumber) {
                 `;
             }
 
-            // Only create the Slides section if there are slides
-            if (weekDetail.slides && weekDetail.slides.length > 0) {
-                slidesHTML = `
-                    <h3>Lecture Slides:</h3>
-                    <ul>
-                        ${weekDetail.slides.map(slides => 
-                            `<iframe width="560" height="315" src=('${slides.link}') frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-                        ).join('')}
-                    </ul>
-                `;
-            }
-
             // Only create the Guest section if there is a guest
             if (weekDetail.guest) {
                 guestHTML = `
@@ -344,6 +331,7 @@ function showWeekContent(weekNumber) {
                     <ul>
                         ${weekDetail.recordings.map(recording => 
                             `<li><a href="${recording.link}" target="_blank">${recording.name}</a></li>`
+                            `<iframe width="560" height="315" src=('${slides.link}') frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
                         ).join('')}
                     </ul>
                 `;
@@ -358,7 +346,6 @@ function showWeekContent(weekNumber) {
                 ${materialsHTML}
                 ${linksHTML}
                 ${readingsHTML}
-                ${slidesHTML}
                 ${recordingsHTML}
             `;
         } else {
