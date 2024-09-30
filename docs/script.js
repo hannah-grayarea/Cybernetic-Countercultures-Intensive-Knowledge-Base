@@ -280,6 +280,8 @@ function showWeekContent(weekNumber) {
             let slidesHTML = '';
             let guestHTML = '';
             let linksHTML = '';
+            let recordingsHTML = '';
+            
             // Only create the Suggested Readings section if there are materials
             if (weekDetail.materials && weekDetail.materials.length > 0) {
                 materialsHTML = `
@@ -322,7 +324,7 @@ function showWeekContent(weekNumber) {
                     <h3>Lecture Slides:</h3>
                     <ul>
                         ${weekDetail.slides.map(slides => 
-                            `<li><a href="#" onclick="downloadFile('${slides.filename}')">${slides.name}</a></li>`
+                            `<iframe width="560" height="315" src=('${slides.link}') frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
                         ).join('')}
                     </ul>
                 `;
@@ -332,6 +334,18 @@ function showWeekContent(weekNumber) {
             if (weekDetail.guest) {
                 guestHTML = `
                     <h3>Guest: ${weekDetail.guest}</h3>
+                `;
+            }
+
+            // Only create the Recordings section if there are recordings
+            if (weekDetail.recordings && weekDetail.recordings.length > 0) {
+                recordingsHTML = `
+                    <h3>Session Recording:</h3>
+                    <ul>
+                        ${weekDetail.recordings.map(recording => 
+                            `<li><a href="${recording.link}" target="_blank">${recording.name}</a></li>`
+                        ).join('')}
+                    </ul>
                 `;
             }
 
@@ -345,6 +359,7 @@ function showWeekContent(weekNumber) {
                 ${linksHTML}
                 ${readingsHTML}
                 ${slidesHTML}
+                ${recordingsHTML}
             `;
         } else {
             sidebar.innerHTML = `
