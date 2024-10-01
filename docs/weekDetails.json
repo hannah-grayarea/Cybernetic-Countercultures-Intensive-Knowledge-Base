@@ -45,6 +45,14 @@
       ],
       "materials": [
         {
+          "name": "Slides: 2.1 Organism and Artifact",
+          "filename": "week2_reading5"
+        },
+        {
+          "name": "Slides: 2.2 Behavior, Purpose and Teleology",
+          "filename": "week2_reading6"
+        },
+        {
           "name": "Rosenblueth, Wiener, and Bigelow, “Behavior, Purpose and Teleology”",
           "filename": "week2_reading1.pdf"
         },
@@ -78,6 +86,10 @@
             {
               "name": "Maturana and Varela, The Tree of Knowledge: The Biological Roots of Human Understanding, 2nd ed.",
               "filename": "week3_reading4.pdf"
+            },
+            {
+              "name": "Stephen Nachmanovitch, 'All About Frogs' from The Art of Is: Improvising as a Way of Life",
+              "filename": "week3_reading5.pdf"
             }
         ],
         "materials": [
