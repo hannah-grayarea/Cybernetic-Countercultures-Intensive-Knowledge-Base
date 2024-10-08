@@ -93,9 +93,17 @@
             }
         ],
         "materials": [
+          {
+            "name": "Slides: 3.1 Approaching Autopoiesis Part One",
+            "filename": "week3_reading6.pdf"
+          },
+          {
+            "name": "Slides: 3.2 Approaching Autopoiesis Part Two",
+            "filename": "week3_reading7.pdf"
+          },
           { 
-            "name": "Varela, Maturana, and Uribe, “Autopoiesis: The Organization of Living Systems”",
-            "filename": "week3_reading3.pdf"
+              "name": "Varela, Maturana, and Uribe, “Autopoiesis: The Organization of Living Systems”",
+              "filename": "week3_reading3.pdf"
           }
         ],
         "links": [
