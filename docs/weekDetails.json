@@ -145,6 +145,14 @@
         ],
         "materials": [
           {
+            "name": "Slides: 4.1 Ecology of Mind Part One",
+            "filename": "week4_reading6.pdf"
+          },
+          {
+            "name": "Slides: 4.2 Ecology of Mind Part Two",
+            "filename": "week4_reading7.pdf"
+          },
+          {
             "name": "Bateson, Steps to an Ecology of Mind, selections: “Cybernetic Explanation,” “Effects of Conscious Purpose on Human Adaptation,” and “Form, Substance and Difference”",
             "filename": "week4_reading1.pdf"
           }
