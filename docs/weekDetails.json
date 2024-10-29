@@ -224,6 +224,14 @@
         ],
         "materials": [
           {
+            "name": "Slides: Observing Natural Systems Part One",
+            "filename": "week6_reading5.pdf"
+          },
+          {
+            "name": "Slides: Observing Natural Systems Part Two",
+            "filename": "week6_reading6.pdf"
+          },
+          {
             "name": "Varela with Barbara Johnson: “On Observing Natural Systems” (Summer 1976)",
             "filename": "week6_reading1.pdf"
           },
