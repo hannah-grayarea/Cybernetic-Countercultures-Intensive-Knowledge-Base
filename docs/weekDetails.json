@@ -281,25 +281,53 @@
       {
         "week": 8,
         "date": "November 18",
-        "title": "Neocybernetics and Gaia: Bruce Clarke",
-        "description": "Lynn Margulis brings planetary autopoiesis to her paradigm-shifting work on symbiosis.",
+        "title": "Cybernetic Ecologies in CoEvolution Quarterly",
+        "description": "Bateson, Brand, Margulis, Lovelock et al on ecosystems, space colonies, termite symbionts, Mars landers, Gaia, and Daisy World",
         "readings": [
-            {
-                "name": "Margulis, “Big Trouble in Biology”",
-                "filename": "week8_reading2.pdf"
-            }, 
-            {
-              "name": "Clarke, “Evolutionary Equality”",
-              "filename": "week8_reading3.pdf"
-            }
         ],
         "materials": [
-          {
-            "name": "Clarke, Gaian Systems, selections: Chapter 3, “Neocybernetics of Gaia”, Chapter 6, “Margulis and Autopoiesis”",
-            "filename": "week8_reading1.pdf"
-          }
         ],
         "links": [
+          {
+            "name": "CQ 6 (Summer 1975), 48ff: Ramón Margalef, 'Perspectives in Ecological Theory'",
+            "link": "https://wholeearth.info/"
+          },
+          {
+            "name": "CQ 7 (Fall 1975), 4-9ff: Gerard O'Neill, 'The High Frontier'",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CQ 9 (Spring 1976), 4ff: Space Colonies: esp. Lynn Margulis (7), Paul and Anne Ehrlich (14), William Irwin Thompson (16), John Todd (20-21), Buckminster Fuller (29)",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CQ 9 (Spring 1976), 91: Lynn Margulis, 'A Coevolutionary Game: Feeding the Masses'",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CCQ 11 (Fall 1976), 38-45: 'Controversy is Rife on Mars: Interviewing Carl Sagan and Lynn Margulis'",
+            "link": "https://wholeearth.info/"
+          },
+          {
+            "name": "CQ 12 (Winter 1976/77), 96-97: Lynn Margulis et al, 'Ecological Considerations for Space Colonies'",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CQ 20 (Winter 1978/79): 106-7: William Irwin Thompson (Whole Earth Jamboree Five-Minute Speech)",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CQ 25 (Spring 1980), 22-30: James Lovelock, “The Independent Practice of Science”; 31-38: Jeanne McDermott, “Lynn Margulis—Unlike Most Microbiologists”",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CQ 29 (Spring 1981), 58-63: W. Ford Doolittle, “Is Nature Really Motherly?” review of Lovelock’s Gaia: A New Look at Life on Earth, James Lovelock responds (62-63), Lynn Margulis responds (63-65)",
+            "link": "https://wholeearth.info/"
+          }, 
+          {
+            "name": "CQ 38 (Summer 1983), 66-72: James Lovelock, 'Daisy World: A Cybernetic Proof of the Gaia Hypothesis'",
+            "link": "https://wholeearth.info/"
+          }
         ],
         "recordings": [
           {
