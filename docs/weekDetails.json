@@ -266,6 +266,14 @@
         ],
         "materials": [
           {
+            "name": "Slides: Planetary Cognition Part One",
+            "filename": "week7_reading4.pdf"
+          },
+          {
+            "name": "Slides: Planetary Cognition Part Two",
+            "filename": "week7_reading5.pdf"
+          },
+          {
             "name": "Margulis and Lovelock, “The Atmosphere as Circulatory System of the Biosphere — The Gaia Hypothesis”",
             "filename": "week7_reading1.pdf"
           }
