@@ -294,6 +294,18 @@
         "readings": [
         ],
         "materials": [
+          {
+            "name": "Week 8 Slides Part One",
+            "filename": "week8_reading1.pdf"
+          },
+          {
+            "name": "Week 8 Slides Part Two",
+            "filename": "week8_reading2.pdf"
+          },
+          {
+            "name": "The TESCREAL bundle: Eugenics and the promise of utopia through artificial general intelligence, Gebru and Torres",
+            "filename": "week8_reading3.pdf"
+          }
         ],
         "links": [
           {
