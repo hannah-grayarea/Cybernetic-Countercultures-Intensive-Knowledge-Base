@@ -358,14 +358,10 @@
       {
         "week": 9,
         "date": "November 25",
-        "title": "Life and Mind: selections from William Irwin Thompson, ed.,",
+        "title": "Mind and Life at Lindisfarne",
         "description": "The 1981 Lindisfarne Fellows meeting at Green Gulch Zen Center as a reunion of the Cybernetic Countercultures. Emergent recognitions of Gaian cognition.",
         "guest": "Evan Thompson",
         "readings": [
-          {
-            "name": "Froese and Ziemke, “Enactive Artificial Intelligence: Investigating the Systemic Organization of Life and Mind”",
-            "filename": "week9_reading3.pdf"
-          },
           {
             "name": "Gaia 2, Emergence: The New Science of Becoming",
             "filename": "week9_reading2.pdf"
@@ -380,6 +376,18 @@
           {
             "name": "Gaia, A Way of Knowing: Political Implications of the New Biology",
             "filename": "week9_reading1.pdf"
+          }, 
+          {
+            "name": "Earth's Answer - Explorations of Planetary Culture at the Lindisfarne Conferences",
+            "filename": "week9_reading3.pdf"
+          }, 
+          {
+            "name": "Week 9 Slides Part One",
+            "filename": "week9_reading5.pdf"
+          }, 
+          {
+            "name": "Week 9 Slides Part Two",
+            "filename": "week9_reading6.pdf"
           }
         ],
         "links": [
