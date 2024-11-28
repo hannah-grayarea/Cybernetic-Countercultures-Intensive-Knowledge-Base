@@ -406,6 +406,14 @@
         "readings": [
         ],
         "materials": [
+          {
+            "name": "Week 10 Slides Part One",
+            "filename": "week10_reading1.pdf"
+          }, 
+          {
+            "name": "Week 10 Slides Part Two",
+            "filename": "week10_reading2.pdf"
+          }
         ],
         "links": [
         ],
