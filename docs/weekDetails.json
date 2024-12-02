@@ -404,6 +404,10 @@
         "title": "Whole Earth Redux",
         "description": "",
         "readings": [
+          {
+            "name": "Williams on Yin and Yang of Laws of Form",
+            "filename": "week10_reading4.pdf"
+          }
         ],
         "materials": [
           {
@@ -413,6 +417,10 @@
           {
             "name": "Week 10 Slides Part Two",
             "filename": "week10_reading2.pdf"
+          },
+          {
+            "name": "Week 10 Slides Part Three",
+            "filename": "week10_reading3.pdf"
           }
         ],
         "links": [
