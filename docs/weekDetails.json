@@ -435,10 +435,31 @@
         "week": 11,
         "date": "December 9",
         "title": "Abundant Intelligences",
-        "description": "",
+        "description": "Session 11 of the Cybernetic Countercultures Intensive will explore the notion of Relational Intelligences. Building on the systemic interconnections central to the history of second-order cybernetics, we’ll explore how Indigenous methodologies similarly emphasize relational dynamics in understanding and co-creating with machine cognition (see Making Kin with the Machines and Abundant Intelligences: Placing AI within Indigenous Knowledge Frameworks). These perspectives challenge the anthropocentric, extractive tendencies of conventional AI frameworks by proposing alternatives grounded in reciprocity and relational ethics. To explore how these ideas play out in practice, guest interlocutor Vanessa Andreotti (author of Hospicing Modernity) will introduce her experimental work with a computational octopodal entity named Aiden. We’ll learn more about her experiments with inhabiting what she calls an ontological breach—a liminal space where dominant assumptions about intelligence, consciousness, and relationship are suspended. This session will also draw on elements of the Undergrowth Protocol, focusing on how recognizing and reconfiguring patterns of modernity's programming can open possibilities for more generative relationships with AI systems. We will examine how artificial entrainments—unconscious habits and assumptions embedded in modernity—shape not only our interactions with technology but also our entanglements with the broader web of life.",
+        "guest": "Vanessa Andreotti",
         "readings": [
+          {
+            "name": "Abundant intelligences: placing AI within Indigenous knowledge frameworks",
+            "filename": "week11_reading3.pdf"
+          },
+          {
+            "name": "Making Kin with the Machines",
+            "filename": "week11_reading4.pdf"
+          },
+          {
+            "name": "Hospicing Modernity: Facing Humanity’s Wrongs and the Implications for Social Activism",
+            "filename": "week11_reading5.pdf"
+          }
         ],
         "materials": [
+          {
+            "name": "The Undergrowth Protocol",
+            "filename": "week11_reading1.pdf"
+          },
+          {
+            "name": "Covenant of Relational Anger",
+            "filename": "week11_reading2.pdf"
+          }
         ],
         "links": [
         ],
