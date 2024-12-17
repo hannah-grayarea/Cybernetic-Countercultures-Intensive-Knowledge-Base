@@ -45,14 +45,6 @@
       ],
       "materials": [
         {
-          "name": "Slides: 2.1 Organism and Artifact",
-          "filename": "week2_reading5.pdf"
-        },
-        {
-          "name": "Slides: 2.2 Behavior, Purpose and Teleology",
-          "filename": "week2_reading6.pdf"
-        },
-        {
           "name": "Rosenblueth, Wiener, and Bigelow, “Behavior, Purpose and Teleology”",
           "filename": "week2_reading1.pdf"
         },
@@ -93,14 +85,6 @@
             }
         ],
         "materials": [
-          {
-            "name": "Slides: 3.1 Approaching Autopoiesis Part One",
-            "filename": "week3_reading6.pdf"
-          },
-          {
-            "name": "Slides: 3.2 Approaching Autopoiesis Part Two",
-            "filename": "week3_reading7.pdf"
-          },
           { 
               "name": "Varela, Maturana, and Uribe, “Autopoiesis: The Organization of Living Systems”",
               "filename": "week3_reading3.pdf"
@@ -145,14 +129,6 @@
         ],
         "materials": [
           {
-            "name": "Slides: 4.1 Ecology of Mind Part One",
-            "filename": "week4_reading6.pdf"
-          },
-          {
-            "name": "Slides: 4.2 Ecology of Mind Part Two",
-            "filename": "week4_reading7.pdf"
-          },
-          {
             "name": "Bateson, Steps to an Ecology of Mind, selections: “Cybernetic Explanation,” “Effects of Conscious Purpose on Human Adaptation,” and “Form, Substance and Difference”",
             "filename": "week4_reading1.pdf"
           }
@@ -182,14 +158,6 @@
             }
         ],
         "materials": [
-          {
-            "name": "Slides: Epistemological Constructivism Part One",
-            "filename": "week5_reading6.pdf"
-          },
-          {
-            "name": "Slides: Epistemological Constructivism Part Two",
-            "filename": "week5_reading7.pdf"
-          },
           {
             "name": "Von Foerster, “On Constructing a Reality”",
             "filename": "week5_reading1.pdf"
@@ -223,14 +191,6 @@
             }
         ],
         "materials": [
-          {
-            "name": "Slides: Observing Natural Systems Part One",
-            "filename": "week6_reading5.pdf"
-          },
-          {
-            "name": "Slides: Observing Natural Systems Part Two",
-            "filename": "week6_reading6.pdf"
-          },
           {
             "name": "Varela with Barbara Johnson: “On Observing Natural Systems” (Summer 1976)",
             "filename": "week6_reading1.pdf"
@@ -266,14 +226,6 @@
         ],
         "materials": [
           {
-            "name": "Slides: Planetary Cognition Part One",
-            "filename": "week7_reading4.pdf"
-          },
-          {
-            "name": "Slides: Planetary Cognition Part Two",
-            "filename": "week7_reading5.pdf"
-          },
-          {
             "name": "Margulis and Lovelock, “The Atmosphere as Circulatory System of the Biosphere — The Gaia Hypothesis”",
             "filename": "week7_reading1.pdf"
           }
@@ -294,14 +246,6 @@
         "readings": [
         ],
         "materials": [
-          {
-            "name": "Week 8 Slides Part One",
-            "filename": "week8_reading1.pdf"
-          },
-          {
-            "name": "Week 8 Slides Part Two",
-            "filename": "week8_reading2.pdf"
-          },
           {
             "name": "The TESCREAL bundle: Eugenics and the promise of utopia through artificial general intelligence, Gebru and Torres",
             "filename": "week8_reading3.pdf"
@@ -380,14 +324,6 @@
           {
             "name": "Earth's Answer - Explorations of Planetary Culture at the Lindisfarne Conferences",
             "filename": "week9_reading3.pdf"
-          }, 
-          {
-            "name": "Week 9 Slides Part One",
-            "filename": "week9_reading5.pdf"
-          }, 
-          {
-            "name": "Week 9 Slides Part Two",
-            "filename": "week9_reading6.pdf"
           }
         ],
         "links": [
@@ -410,18 +346,6 @@
           }
         ],
         "materials": [
-          {
-            "name": "Week 10 Slides Part One",
-            "filename": "week10_reading1.pdf"
-          }, 
-          {
-            "name": "Week 10 Slides Part Two",
-            "filename": "week10_reading2.pdf"
-          },
-          {
-            "name": "Week 10 Slides Part Three",
-            "filename": "week10_reading3.pdf"
-          }
         ],
         "links": [
         ],
